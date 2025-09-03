@@ -575,15 +575,103 @@ document
   });
 
 
-// copy count
-let copyCount = 0;
-const copyCountBtn = document.getElementById("copy-count");
-const copyCountNumber = document.getElementById("copy-count-number");
+// copy count 1
+let nationalCount = 0;
+const nationalCountBtn = document.getElementById("national-count");
+const nationalCountNumber = document.getElementById("copy-count-number");
 
-copyCountBtn.addEventListener("click", function (even) {
+nationalCountBtn.addEventListener("click", function (even) {
   even.preventDefault();
-  copyCount++;
-  copyCountNumber.innerText = copyCount;
+  nationalCount++;
+  nationalCountNumber.innerText = nationalCount;
+});
+
+// copy count 2
+let policeCount = 0;
+const policeCountBtn = document.getElementById("police-count");
+const policeCountNumber = document.getElementById("copy-count-number");
+
+policeCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  policeCount++;
+  policeCountNumber.innerText = policeCount;
+});
+
+// copy count 3
+let fireCount = 0;
+const fireCountBtn = document.getElementById("fire-count");
+const fireCountNumber = document.getElementById("copy-count-number");
+
+fireCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  fireCount++;
+  fireCountNumber.innerText = fireCount;
+});
+
+// copy count 4
+let ambulanceCount = 0;
+const ambulanceCountBtn = document.getElementById("ambulance-count");
+const ambulanceCountNumber = document.getElementById("copy-count-number");
+
+ambulanceCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  ambulanceCount++;
+  ambulanceCountNumber.innerText = ambulanceCount;
+});
+
+// copy count 5
+let womenCount = 0;
+const womenCountBtn = document.getElementById("women-count");
+const womenCountNumber = document.getElementById("copy-count-number");
+
+womenCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  womenCount++;
+  womenCountNumber.innerText = womenCount;
+});
+
+// copy count 6
+let antiCount = 0;
+const antiCountBtn = document.getElementById("anti-count");
+const antiCountNumber = document.getElementById("copy-count-number");
+
+antiCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  antiCount++;
+  antiCountNumber.innerText = antiCount;
+});
+
+// copy count 7
+let electricityCount = 0;
+const electricityCountBtn = document.getElementById("electricity-count");
+const electricityCountNumber = document.getElementById("copy-count-number");
+
+electricityCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  electricityCount++;
+  electricityCountNumber.innerText = electricityCount;
+});
+
+// copy count 8
+let bracCount = 0;
+const bracCountBtn = document.getElementById("brac-count");
+const bracCountNumber = document.getElementById("copy-count-number");
+
+bracCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  bracCount++;
+  bracCountNumber.innerText = bracCount;
+});
+
+// copy count 9
+let railwayCount = 0;
+const railwayCountBtn = document.getElementById("railway-count");
+const railwayCountNumber = document.getElementById("copy-count-number");
+
+railwayCountBtn.addEventListener("click", function (even) {
+  even.preventDefault();
+  railwayCount++;
+  railwayCountNumber.innerText = railwayCount;
 });
 
 // alert("Calling National Emergency Services 999..")
