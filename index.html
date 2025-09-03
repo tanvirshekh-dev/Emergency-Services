@@ -30,15 +30,15 @@
     <!-- style css link -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="hind-madurai">
+  <body class="hind-madurai bg-[#f5fff6]">
     <!-- navbar section -->
     <section class="min-h-[50px]">
       <nav
         class="container flex justify-between items-center mx-auto flex-wrap p-4 flex-col md:flex-row bg-white"
       >
-        <div class="flex items-center font-black">
-          <img src="./assets/logo.png" alt="" class="w-16" />
-          <p class="font-black text-2xl text-[#006747] ml-3">
+        <div class="flex items-center font-black mb-4 md:mb-0">
+          <img src="./assets/logo.png" alt="" class="lg:w-16 w-12" />
+          <p class="font-black lg:text-2xl text-xl text-[#006747] ml-3">
             Emergency <br />Service
           </p>
         </div>
@@ -46,33 +46,36 @@
           <button
             class="rounded-full text-black border-none bg-[#ecfff0] px-5 py-2 border-2 font-semibold text-lg flex items-center justify-center"
           >
-            <span class="text-xl">0</span>
+            <span id="hart-count-number" class="text-xl">0</span>
             <img src="assets/heart.png" alt="" class="h-[30px] ml-4" />
           </button>
 
           <button
             class="rounded-full text-black border-none bg-[#ecfff0] px-5 py-2 border-2 font-semibold text-lg flex items-center justify-center"
           >
-            <span class="text-xl">100</span>
+            <span id="coin-number" class="text-xl">100</span>
             <img src="assets/coin.png" alt="" class="h-[30px] ml-4" />
           </button>
 
           <button
+            
             class="rounded-full text-white bg-green-600 px-5 py-2 border-2 font-semibold text-lg"
           >
-            0 Copy
+            <span id="copy-count-number" class="text-xl">0</span> Copy
           </button>
         </div>
       </nav>
     </section>
 
     <!-- hero section -->
-    <section class="body-font bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+    <section
+      class="body-font bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
+    >
       <div
         class="container mx-auto flex flex-col px-5 py-10 justify-center items-center"
       >
         <img
-          class="lg:w-1/8 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          class="lg:w-1/8 md:w-3/6 w-2/6 mb-10 object-cover object-center rounded"
           alt="hero"
           src="./assets/logo-dark.png"
         />
@@ -80,19 +83,424 @@
           class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center"
         >
           <h1
-            class="title-font sm:text-4xl text-6xl mb-4 font-semibold text-white"
+            class="title-font sm:text-4xl text-4xl lg:text-4xl mb-4 font-semibold text-white"
           >
-           Emergency Service Directory
+            Emergency Service Directory
           </h1>
-          <p class="leading-relaxed text-white font-medium text-base">
-           Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh
+          <p class="leading-relaxed text-white font-medium text-sm">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
           </p>
         </div>
       </div>
     </section>
 
     <!-- services cart section -->
-     
+    <section class="container mx-auto flex-col w-full p-5">
+      <div
+        class="grid gap-5 justify-center pt-12 pb-16 grid-cols-1 lg:grid-cols-4 grid-rows- grid-flow-dense"
+      >
+      <!-- cart-01  -->
+        <div class="col-span-1">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="national-hart-count" class="hart-number fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">National Emergency Number</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">
+                National Emergency
+              </p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">999</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                All
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  id="copy-count"
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  id="national-call"
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+
+                <!-- Alert to click the call button -->
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- cart-02  -->
+        <div class="col-span-1">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/police.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="police-hart-count" class=" fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Police Helpline Number</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">Police</p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">999</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Police
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  id="police-call"
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-03  -->
+        <div class="col-span-1">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/fire-service.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="fire-hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Fire Service Number</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">Fire Service</p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">999</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Fire
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- call history btn -->
+        <div class="col-span-1 row-span-3 bg-white rounded-xl shadow-lg">
+          <div class="">
+            <div
+              class="grid grid-cols-2 justify-between text-center p-5"
+            >
+              <div class="flex items-center">
+                <i class="fa-solid fa-clock text-xl mr-2"></i>
+                <p class="text-xl font-medium">Call History</p>
+              </div>
+
+              <div class="justify-self-end">
+                <button
+                  id="clear-history"
+                  class="rounded-full text-white bg-green-600 px-7 py-2 border-2 font-medium text-lg"
+                >
+                  Clear
+                </button>
+              </div>
+
+              <div id="call-history" class="col-span-2">
+               
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- cart-04  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/ambulance.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="ambulance-hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Ambulance Service</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">Ambulance</p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">1994-999999</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Health
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-05  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="women-hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Women & Child Helpline</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">
+                Women & Child Helpline
+              </p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">109</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Help
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-06  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="anti-hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Anti-Corruption Helpline</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">
+                Anti-Corruption
+              </p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">106</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Govt.
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-07  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Electricity Helpline</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">
+                Electricity Outage
+              </p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">16216</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Electricity
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-08  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">Brac Helpline</h2>
+              <p class="text-base text-[#5C5C5C] font-medium">Brac</p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">16445</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                NGO
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart-09  -->
+        <div class="">
+          <div class="bg-white rounded-xl shadow-lg p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./assets/emergency.png"
+                alt=""
+                class="bg-[#ffe3e2] rounded-2xl p-3 w-[50px]"
+              />
+              <i id="hart-count" class="fa-solid fa-heart text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold pt-4">
+                Bangladesh Railway Helpline
+              </h2>
+              <p class="text-base text-[#5C5C5C] font-medium">
+                Bangladesh Railway
+              </p>
+
+              <h2 class="mt-3 text-2xl font-bold text-black">163</h2>
+              <button
+                class="bg-[#f2f2f2] px-5 py-2 text-lg font-normal mt-1 mb-3 rounded-3xl"
+              >
+                Travel
+              </button>
+            </div>
+            <div>
+              <div class="flex justify-between items-center gap-3">
+                <button
+                  class="inline-flex text-black border-1 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-copy pt-1 pr-2"></i> Copy
+                </button>
+
+                <button
+                  class="inline-flex border-1 py-2 px-6 focus:outline-none bg-[#00a63e] text-white hover:text-gray-200 hover:bg-gray-400 rounded-xl text-lg w-full"
+                >
+                  <i class="fa-solid fa-phone pt-1 mr-2"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services cart section -->
+
     <!-- script link -->
     <script src="js/script.js"></script>
   </body>
