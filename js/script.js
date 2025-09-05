@@ -633,6 +633,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 999");
+
+    const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 2
@@ -647,6 +653,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 999");
+
+    const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 3
@@ -661,6 +673,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 999");
+
+    const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 4
@@ -675,6 +693,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 1994-999999");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 5
@@ -689,6 +713,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 109");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 6
@@ -703,6 +733,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 106");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 7
@@ -717,6 +753,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 16216");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 8
@@ -731,6 +773,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 16445");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // copy count 9
@@ -745,6 +793,12 @@ document
     document.getElementById("copy-count-number").innerText =
       emergencyCopyNumber;
     alert("The number has been copied: 163");
+
+     const card = even.currentTarget.parentElement.parentElement.parentElement
+    const text = card.querySelector(".copy-text").innerText
+    console.log(text);
+      
+    navigator.clipboard.writeText(text);
   });
 
 // alert("Calling National Emergency Services 999..")
