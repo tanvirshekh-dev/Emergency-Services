@@ -15,68 +15,122 @@
 // });
 
 const callHistory = [];
-
 // hart count 1
-let hartCount = 0;
-const hartCountBtn = document.getElementById("national-hart-count");
-const hartCountNumber = document.getElementById("hart-count-number");
-
-hartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  hartCount++;
-  hartCountNumber.innerText = hartCount;
-});
+document
+  .getElementById("national-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
 // hart count 2
-let policeHartCount = 0;
-const policeHartCountBtn = document.getElementById("police-hart-count");
-const policeHartCountNumber = document.getElementById("hart-count-number");
+document
+  .getElementById("police-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
-policeHartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  policeHartCount++;
-  policeHartCountNumber.innerText = policeHartCount;
-});
 // hart count 3
-let fireHartCount = 0;
-const fireHartCountBtn = document.getElementById("fire-hart-count");
-const fireHartCountNumber = document.getElementById("hart-count-number");
+document
+  .getElementById("fire-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
-fireHartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  fireHartCount++;
-  fireHartCountNumber.innerText = fireHartCount;
-});
 // hart count 4
-let ambulanceHartCount = 0;
-const ambulanceHartCountBtn = document.getElementById("ambulance-hart-count");
-const ambulanceHartCountNumber = document.getElementById("hart-count-number");
+document
+  .getElementById("ambulance-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
-ambulanceHartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  ambulanceHartCount++;
-  ambulanceHartCountNumber.innerText = ambulanceHartCount;
-});
 // hart count 5
-let womenHartCount = 0;
-const womenHartCountBtn = document.getElementById("women-hart-count");
-const womenHartCountNumber = document.getElementById("hart-count-number");
+document
+  .getElementById("women-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
-womenHartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  womenHartCount++;
-  womenHartCountNumber.innerText = womenHartCount;
-});
 // hart count 6
-let antiHartCount = 0;
-const antiHartCountBtn = document.getElementById("anti-hart-count");
-const antiHartCountNumber = document.getElementById("hart-count-number");
+document
+  .getElementById("anti-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
-antiHartCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  antiHartCount++;
-  antiHartCountNumber.innerText = antiHartCount;
-});
+// hart count 7
+document
+  .getElementById("electricity-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
+
+// hart count 8
+document
+  .getElementById("brac-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
+
+// hart count 9
+document
+  .getElementById("railway-hart-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyHartCountNumber = parseInt(
+      document.getElementById("hart-count-number").innerText
+    );
+    emergencyHartCountNumber++;
+    document.getElementById("hart-count-number").innerText =
+      emergencyHartCountNumber;
+  });
 
 // this is the full functional to popup button
 // coin decrement 1
@@ -94,10 +148,9 @@ document
     coinCountNumber = coinCountNumber - 20;
     document.getElementById("coin-number").innerText = coinCountNumber;
 
-      alert("Call National Emergency Services 999..");
-      
-      
-//   date create 1
+    alert("Call National Emergency Services 999..");
+
+    //   date create 1
     const data = {
       name: "National Emergency Number",
       number: 999,
@@ -149,10 +202,9 @@ document
     policeCountNumber = policeCountNumber - 20;
     document.getElementById("coin-number").innerText = policeCountNumber;
 
-      alert("Call The Police Helpline Number 999..");
-      
-      
-//   date create 2
+    alert("Call The Police Helpline Number 999..");
+
+    //   date create 2
     const data = {
       name: "Police Helpline Number",
       number: 999,
@@ -204,10 +256,9 @@ document
     fireCountNumber = fireCountNumber - 20;
     document.getElementById("coin-number").innerText = fireCountNumber;
 
-      alert("Call Fire Service Number 999..");
-      
-      
-//   date create 3
+    alert("Call Fire Service Number 999..");
+
+    //   date create 3
     const data = {
       name: "Fire Service Number",
       number: 999,
@@ -259,10 +310,9 @@ document
     ambulanceCountNumber = ambulanceCountNumber - 20;
     document.getElementById("coin-number").innerText = ambulanceCountNumber;
 
-      alert("Call The Ambulance Service 1994-999999..");
-      
-      
-//   date create 4
+    alert("Call The Ambulance Service 1994-999999..");
+
+    //   date create 4
     const data = {
       name: "Ambulance Service Number",
       number: "1994-999999",
@@ -314,10 +364,9 @@ document
     womenCountNumber = womenCountNumber - 20;
     document.getElementById("coin-number").innerText = womenCountNumber;
 
-      alert("Call The Women & Child Helpline 109..");
-      
-      
-//   date create 5
+    alert("Call The Women & Child Helpline 109..");
+
+    //   date create 5
     const data = {
       name: "Women & Child Helpline Number",
       number: 109,
@@ -369,10 +418,9 @@ document
     antiCountNumber = antiCountNumber - 20;
     document.getElementById("coin-number").innerText = antiCountNumber;
 
-      alert("Call The Anti-Corruption Helpline 106..");
-      
-      
-//   date create 6
+    alert("Call The Anti-Corruption Helpline 106..");
+
+    //   date create 6
     const data = {
       name: "Anti-Corruption Helpline Number",
       number: 106,
@@ -414,7 +462,8 @@ document
   .getElementById("electricity-call")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    let electricityCountNumber = document.getElementById("coin-number").innerText;
+    let electricityCountNumber =
+      document.getElementById("coin-number").innerText;
     if (electricityCountNumber < 20) {
       alert(
         "You don't have enough coins to make a call. You need at least 20 coins."
@@ -424,10 +473,9 @@ document
     electricityCountNumber = electricityCountNumber - 20;
     document.getElementById("coin-number").innerText = electricityCountNumber;
 
-      alert("Call The Electricity Helpline 16216..");
-      
-      
-//   date create 7
+    alert("Call The Electricity Helpline 16216..");
+
+    //   date create 7
     const data = {
       name: "Electricity Helpline Number",
       number: 16216,
@@ -479,10 +527,9 @@ document
     bracCountNumber = bracCountNumber - 20;
     document.getElementById("coin-number").innerText = bracCountNumber;
 
-      alert("Call The Brac Helpline 16445..");
-      
-      
-//   date create 8
+    alert("Call The Brac Helpline 16445..");
+
+    //   date create 8
     const data = {
       name: "Brac Helpline Number",
       number: 16445,
@@ -534,10 +581,9 @@ document
     railwayCountNumber = railwayCountNumber - 20;
     document.getElementById("coin-number").innerText = railwayCountNumber;
 
-      alert("Call The Bangladesh Railway Helpline 163..");
-      
-      
-//   date create 9
+    alert("Call The Bangladesh Railway Helpline 163..");
+
+    //   date create 9
     const data = {
       name: "Bangladesh Railway Helpline Number",
       number: 163,
@@ -576,102 +622,129 @@ document
 
 
 // copy count 1
-let nationalCount = 0;
-const nationalCountBtn = document.getElementById("national-count");
-const nationalCountNumber = document.getElementById("copy-count-number");
-
-nationalCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  nationalCount++;
-  nationalCountNumber.innerText = nationalCount;
-});
+document
+  .getElementById("national-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 999");
+  });
 
 // copy count 2
-let policeCount = 0;
-const policeCountBtn = document.getElementById("police-count");
-const policeCountNumber = document.getElementById("copy-count-number");
-
-policeCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  policeCount++;
-  policeCountNumber.innerText = policeCount;
-});
+document
+  .getElementById("police-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 999");
+  });
 
 // copy count 3
-let fireCount = 0;
-const fireCountBtn = document.getElementById("fire-count");
-const fireCountNumber = document.getElementById("copy-count-number");
-
-fireCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  fireCount++;
-  fireCountNumber.innerText = fireCount;
-});
+document
+  .getElementById("fire-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 999");
+  });
 
 // copy count 4
-let ambulanceCount = 0;
-const ambulanceCountBtn = document.getElementById("ambulance-count");
-const ambulanceCountNumber = document.getElementById("copy-count-number");
-
-ambulanceCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  ambulanceCount++;
-  ambulanceCountNumber.innerText = ambulanceCount;
-});
+document
+  .getElementById("ambulance-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 1994-999999");
+  });
 
 // copy count 5
-let womenCount = 0;
-const womenCountBtn = document.getElementById("women-count");
-const womenCountNumber = document.getElementById("copy-count-number");
-
-womenCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  womenCount++;
-  womenCountNumber.innerText = womenCount;
-});
+document
+  .getElementById("women-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 109");
+  });
 
 // copy count 6
-let antiCount = 0;
-const antiCountBtn = document.getElementById("anti-count");
-const antiCountNumber = document.getElementById("copy-count-number");
-
-antiCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  antiCount++;
-  antiCountNumber.innerText = antiCount;
-});
+document
+  .getElementById("anti-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 106");
+  });
 
 // copy count 7
-let electricityCount = 0;
-const electricityCountBtn = document.getElementById("electricity-count");
-const electricityCountNumber = document.getElementById("copy-count-number");
-
-electricityCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  electricityCount++;
-  electricityCountNumber.innerText = electricityCount;
-});
+document
+  .getElementById("electricity-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 16216");
+  });
 
 // copy count 8
-let bracCount = 0;
-const bracCountBtn = document.getElementById("brac-count");
-const bracCountNumber = document.getElementById("copy-count-number");
-
-bracCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  bracCount++;
-  bracCountNumber.innerText = bracCount;
-});
+document
+  .getElementById("brac-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 16445");
+  });
 
 // copy count 9
-let railwayCount = 0;
-const railwayCountBtn = document.getElementById("railway-count");
-const railwayCountNumber = document.getElementById("copy-count-number");
-
-railwayCountBtn.addEventListener("click", function (even) {
-  even.preventDefault();
-  railwayCount++;
-  railwayCountNumber.innerText = railwayCount;
-});
+document
+  .getElementById("railway-count")
+  .addEventListener("click", function (even) {
+    even.preventDefault();
+    let emergencyCopyNumber = parseInt(
+      document.getElementById("copy-count-number").innerText
+    );
+    emergencyCopyNumber++;
+    document.getElementById("copy-count-number").innerText =
+      emergencyCopyNumber;
+    alert("The number has been copied: 163");
+  });
 
 // alert("Calling National Emergency Services 999..")
